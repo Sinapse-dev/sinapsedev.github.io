@@ -3,12 +3,26 @@
 
 @import "{{ site.theme }}";
 
-/* --- Minhas Customizações --- */
+/* Cores personalizadas */
+$primary-color: #007bff; // Um azul vibrante
+$secondary-color: #6c757d; // Um cinza um pouco mais escuro
+$accent-color: #28a745; // Um verde para destaque
+
 body {
-  background-color: #f4f4f4; // Um cinza bem claro
+  font-family: sans-serif; /* Uma fonte padrão */
+  color: $secondary-color;
 }
 
 h1, h2, h3 {
-  font-family: "Verdana", sans-serif;
-  color: #0056b3; // Um azul escuro
+  color: $primary-color;
+  font-weight: bold;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
